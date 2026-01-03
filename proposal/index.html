@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Screen 1 -->
+  <div class="screen active">
+    <h1>Hii Cutie 💖</h1>
+    <button onclick="nextScreen()">Next</button>
+  </div>
+
+  <!-- Screen 2 -->
+  <div class="screen">
+    <div class="gift" onclick="openGift()">🎁</div>
+    <p id="giftText"></p>
+    <button id="giftNext" onclick="nextScreen()" style="display:none;">Next</button>
+  </div>
+
+  <!-- Screen 3 -->
+  <div class="screen">
+    <p class="typing"
+       data-text="I know you overthink a lot sometimes,
+but don’t worry.
+I am always there for you in every moment of life.">
+    </p>
+    <button onclick="nextScreen()">Next</button>
+  </div>
+
+  <!-- Screen 4 -->
+  <div class="screen">
+    <p class="typing"
+       data-text="I have been waiting for this since long ago,
+and today I am finally going to say it.">
+    </p>
+    <button onclick="nextScreen()">Next</button>
+  </div>
+
+  <!-- Screen 5 -->
+  <div class="screen">
+    <h2>Will you be mine forever? ❤️</h2>
+    <div class="btn-row">
+      <button class="yes" onclick="nextScreen()">Yes</button>
+      <button class="no" id="noBtn">No</button>
+    </div>
+  </div>
+
+  <!-- Screen 6 -->
+  <div class="screen">
+    <h1>I Love You ❤️</h1>
+    <img src="proposal.png" class="proposal">
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
